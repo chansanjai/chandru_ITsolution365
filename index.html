@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TI-course</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- main-div -->
+    <div class="what-apps">
+        <div class="apps-1"><span>Need Help?<b>Chat with us</b></span>
+            <i class="fa-brands fa-whatsapp" style="font-size: 40px;color: green;"></i>
+        </div>
+    </div>
+    <div class="contect-popup" id="alertbox">
+        <!-- <p id="clear-btn"><i class="fa-solid fa-xmark"></i></p> -->
+         <form action="" id="booking">
+            <p id="clear-btn"><i class="fa-solid fa-xmark"></i></p>
+            <h2 style="text-align: center;">Booking the Course</h2>
+            <input type="text" placeholder="First-Name" class="int" id="fname">
+            <p id="first-name"></p>
+            <input type="email" placeholder="Email" class="int">
+            <p id="email-name"></p>
+            <input type="text" placeholder="Phone number" class="int">
+            <p id="Phone-name"></p>
+            <select name="" id="" class="int">
+                <option value="">Select Branch </option>
+                <option value="">Chennain</option>
+                <option value="">Coimbatore</option>
+            </select>
+            <p id="select-branch"></p>
+            <select name="" id="" class="int">
+                <option value="">Select Course</option>
+                <option value="">Java</option>
+                <option value="">Python</option>
+                <option value="">Data Analytics</option>
+                <option value="">web design</option>
+                <option value="">Software Teasting</option>
+                <option value="">Amazon web Services</option>
+                <option value="">DevOps</option>
+                <option value="">Fullstack Developer</option>
+                <option value="">UI/UX</option>
+                <option value="">Digital Marketing</option>
+                <option value="">Data science</option>
+                <option value="">selenium</option>
+            </select>
+            <p id="select-coures"></p>
+            <div class="sub-btn ">
+                <button class="int" style="font-size: 18px;
+                    background-color: orangered;color: white;"  id="submit-btn">Submit</button>
+            </div>
+        </form>
+    </div>
+         
+    <div class="main-div">
+        <!-- content-div flex box-->
+        <!-- whatapp -->
+       
+         <!-- <div class="content">
+            <div class="cont-1">
+                <div class="logo-img">
+                    <img src="./login-1.png" alt="">
+                </div>
+                <!-- nav-bar click me 
+                <div class="hide-h3">
+                    <h3 class="hide-clickme" id="click-link"><i class="fa-solid fa-bars " style="font-size: 20px;"></i>
+                    </h3>
+                    <h3 class="cencel" id="again" style="display: none"><i class="fa-solid fa-xmark"
+                            style="font-size: 20px;"></i> </h3>
+                </div>
+
+            </div>
+            <div class="cont-2">
+                <span class="spa-1">Individual Course <span style="color: orangered;font-size: 26px;"> &#8377;4,999/-</span></span>
+                <span class="spa-1">Diploma Course <span style="color: orangered;font-size: 26px;"> &#8377;9,999/-</span></span>
+                <span class="spa-1">Fullstack Course<span style="color: orangered;font-size: 26px;"> &#8377;19,999/-</span></span>
+            </div>
+
+        </div>  -->
+        <!-- <div class="new-heading">
+            <marquee behavior="" direction="">
+                <span class="spa-1">Individual Course <span style="color:orangered;">&#8377;4,999/-</span></span>
+                <span class="spa-1">Diploma Course<span style="color:orangered;">&#8377;9,999/-</span></span>
+                <span class="spa-1">Fullstack Course<span style="color:orangered;">&#8377;19,999/-</span></span>
+            </marquee>
+        </div> -->
+        <!-- Drop down -->
+        <div class="drop-down" id="drop-link">
+            <ul>
+                <li><a href="./sing-up-index.html" >Sing up</a></li>
+                <li> <a href="./login-index.html" >Login in</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li>
+                    <div class="course-link-1">
+                        <a href="#">Course <i class="fa-solid fa-chevron-down"style="font-size: 12px;padding-left: 10px;"></i>
+                                </a>
+                        <div class="hide-link">
+                            <div class="div-1 conmen-1">
+                                Java Training 
+                                <div class="second-div">
+                                    <div class="sec-div-1"><a href="#">Java</a></div>
+                                    <div class="sec-div-1"><a href="#">Spring Boot</a></div>
+                                </div>
+                            </div>
+                            <div class="div-1 conmen-1">
+                                Python Training 
+                                <div class="second-div">
+                                    <div class="sec-div-1"><a href="#">Python</a></div>
+                                    <div class="sec-div-1"><a href="#">Python & Django</a></div>
+                                </div>
+                            </div>
+                            <div class="div-1 conmen-1">
+                                Data Science Training 
+                                <div class="second-div">
+                                    <div class="sec-div-1"><a href="#">Data Science</a></div>
+                                    <div class="sec-div-1"><a href="#">Data Analytics</a></div>
+                                </div>
+                            </div>
+                            <div class="div-4 conmen-1">Fullstack Training</div>
+                            <div class="div-5 conmen-1">Web Designing</div>
+                            <div class="div-6 conmen-1">Software Testing</div>
+                            <div class="div-7 conmen-1">Amazon Web Services</div>
+                            <div class="div-8 conmen-1">DevOps</div>
+                            <div class="div-9 conmen-1">UI/UX</div>
+                            <div class="div-10 conmen-1">Digital Marketing</div>
+
+                        </div>
+
+                </li>
+                <li><a href="#">Placement Records</a></li>
+                <li><a href="#contact">Contac Us</a></li>
+               
+                
+
+            </ul>
+
+        </div>
+        <!-- new nav-bar -->
+        <header class="nav-bar">
+            <!-- hide-nav-bar -->
+                <div class="hide-nav-bar">
+                  <i class="fa-solid fa-bars" id="show-nav-bar"></i>
+                  <!-- drop-down -->
+                  <div class="drop-down" id="show-in"> 
+                    <ul>
+                      <li class="clear-1"><p id="hide-drop">X</p></li>
+                      <li class="link-tag"><a href="./login-index.html">Login</a></li>
+                      <li class="link-tag"><a href="./sing-up-index.html">Sing up</a></li>
+                      <li class="border-line">Most popuarl</li>
+                      <li><a href="#">Web Development</a><i class="fa-solid fa-greater-than"></i></li>
+                      <li><a href="#">Mobile Development</a><i class="fa-solid fa-greater-than"></i></li>
+                      <li><a href="#">Game Development</a><i class="fa-solid fa-greater-than"></i></li>
+                      <li><a href="#">Entepreneurship </a><i class="fa-solid fa-greater-than"></i></li>
+                      <li><a href="#">Business Analytics</a><i class="fa-solid fa-greater-than"></i></li>
+                      <li><a href="#">Finance</a><i class="fa-solid fa-greater-than"></i></li>
+                      <li><a href="#">IT Certification</a><i class="fa-solid fa-greater-than"></i></li>
+                      <li><a href="#">Personal Transformation</a><i class="fa-solid fa-greater-than"></i></li>
+                      <li><a href="#">Graphic Design</a><i class="fa-solid fa-greater-than"></i></li>
+                      <li><a href="#">Digital Marketing</a><i class="fa-solid fa-greater-than"></i></li>
+                      <li><a href="#">All categories</a><i class="fa-solid fa-greater-than"></i></li>
+                      <li class="border-line"> More form Udemy</li>
+                      <li><a href="#">Udemy Business</a></li>
+                      <li><a href="#">Get the app</a></li>
+                      <li><a href="#">Invite friend</a></li>
+                      <li><a href="#">Help</a></li>
+                      <li><a href="#"><i class="fa-solid fa-earth-americas"></i> Tamil/English</a></li>
+                      <li></li>
+          
+                    </ul>
+                  </div>
+                </div>
+                <div class="headin-tag" id="logo" style="font-style: italic;">
+                    <span style="color: orangered;">IT</span><span style="font-size: 18px;">
+                        <i class="fa-solid fa-less-than"></i>
+                        code
+                        <i class="fa-solid fa-greater-than"></i>
+                    </span><sup style="color: orangered;font-size: 12px;font-weight: bold;">365</sup>
+                    <!-- <img src="./login-1.png" alt="" style="width: 10%;"> -->
+                </div>
+                <!-- search -->
+                  <div class="hide-nav-bar">
+             
+                  </div>
+                 <!-- shop -->
+                  <div class="hide-nav-bar">
+                    <i class="fa-solid fa-magnifying-glass" id="search-bar"></i>
+                    <i class="fa-solid fa-cart-shopping" style="padding-left: 20px;" id="shop-bar"></i>
+                  </div>
+                <div class="nav-conatant catagories" >
+                  Catagories<i class="fa-solid fa-chevron-down"></i>
+                  <!-- all course -->
+                  <div class="all-drop course">
+                    <ul>
+                      <li><a href="#">Development</a><i class="fa-solid fa-greater-than"></i></li>
+                      <li><a href="#">Business</a><i class="fa-solid fa-greater-than"></i></li>
+                      <li><a href="#">Finance & Accounting</a><i class="fa-solid fa-greater-than"></i></li>
+                      <li><a href="#">IT & Softwere</a><i class="fa-solid fa-greater-than"></i></li>
+                      <li><a href="#">Office Productivity</a><i class="fa-solid fa-greater-than"></i></li>
+                      <li><a href="#">Design</a><i class="fa-solid fa-greater-than"></i></li>
+                      <li><a href="#">Marketing</a><i class="fa-solid fa-greater-than"></i></li>
+                      <li><a href="#">Lifestyle</a><i class="fa-solid fa-greater-than"></i></li>
+                      <li><a href="#">Photography & Video</a><i class="fa-solid fa-greater-than"></i></li>
+                      <li><a href="#">Health & Fitness</a><i class="fa-solid fa-greater-than"></i></li>
+                      <li><a href="#">Music</a><i class="fa-solid fa-greater-than"></i></li>
+                      <li><a href="#">Teaching & Academics</a><i class="fa-solid fa-greater-than"></i></li>
+                      
+                    </ul>
+                  </div>
+                </div>
+                <div class="input-div nav-conatant" id="input-show">
+                  
+                  <i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Search"><span class="clearhide" id="clearx">X</span>
+                </div>
+                <div class="nav-conatant Udemy-Business" style="color: orangered;">
+                    CodePrepar
+                  <i class="fa-solid fa-chevron-down" style="font-size: 12px;"></i>
+                  <!-- start -->
+                  <div class="udemy-busi">
+                    <div>
+                      <h3>Coding Prepar</h3>
+                      <button>Go Now</button>
+                    </div>
+                  </div>
+                   <!-- end -->
+                </div>
+                <div class="nav-conatant  Udemy-Business">
+                  Code On Business
+                  <div class="udemy-busi">
+                    <div>
+                      <h3>Get your team access to over 
+                        26,000 top Code courses, anytime, anywhere.</h3>
+                      <button>Try  Code Business </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="nav-conatant Udemy-Business">
+                  Teach on Code
+                  <div class="udemy-busi">
+                    <div>
+                      <h3>Turn what you know into an opportunity and reach millions around the world.
+                      </h3>
+                      <button>Learn more</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="nav-conatant Udemy-Business">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <sup style="color: orangered;">33</sup>
+                  <div class="udemy-busi ">
+                    <div>
+                      <h3>
+                        Your cart is empty.
+                      </h3>
+                      <button>Keep shopping</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="nav-conatant all-sing-login">
+                  <a href="./login-index.html" target="_parent">Login</a>
+                </div>
+                <div class="nav-conatant all-sing-login">
+                  <a href="./sing-up-index.html" target="_parent">Sing Up</a>
+                </div>
+                <div class="nav-conatant all-sing-login">
+                  <a href="#"><i class="fa-solid fa-earth-americas"></i></a>
+                </div>
+           </header>
+       <!-- </div> -->
+           <!-- conatainer-baner ---------------------------------------------------------------------------------->
+           <div class="conatainer-bar">
+            <div class="cont-div-1">
+              <h2>Skills for everyone & everything </h2>
+              <p>Our big sale is on. Get courses from ₹399 for your career & your life. Sale ends August 29.</p>
+             </div>
+            <div class="cont-div-2">
+               <!-- <img src="./udemy-img.jpg" alt=""> -->
+            </div>    
+           </div>
+         <!--seacrch box----->
+        
+         <!-- end nav-bar -->
+
+        <!-- main-nav-bar -->
+       
+        <!-- <div class="nav-bar"> -->
+            <!-- <a href="#" class="first-a">Home</a>
+            <a href="#">About</a> -->
+            <!-- <div class="course-link-1">
+                <a href="#">Course<i class="fa-solid fa-chevron-down"style="font-size: 12px;padding-left: 10px;"></i></a>
+                <div class="hide-link">
+                    <div class="div-1 conmen-1">
+                        Java Training
+                        <div class="second-div">
+                            <div class="sec-div-1"><a href="#">Java</a></div>
+                            <div class="sec-div-1"><a href="#">Spring Boot</a></div>
+                        </div>
+                    </div>
+                    <div class="div-1 conmen-1">
+                        Python Training
+                        <div class="second-div">
+                            <div class="sec-div-1"><a href="#">Python</a></div>
+                            <div class="sec-div-1"><a href="#">Python & Django</a></div>
+                        </div>
+                    </div>
+                    <div class="div-1 conmen-1">
+                        Data Science Training
+                        <div class="second-div">
+                            <div class="sec-div-1"><a href="#">Data Science</a></div>
+                            <div class="sec-div-1"><a href="#">Data Analytics</a></div>
+                        </div>
+                    </div>
+                    <div class="div-4 conmen-1">Fullstack Training</div>
+                    <div class="div-5 conmen-1">Web Designing</div>
+                    <div class="div-6 conmen-1">Software Testing</div>
+                    <div class="div-7 conmen-1">Amazon Web Services</div>
+                    <div class="div-8 conmen-1">DevOps</div>
+                    <div class="div-9 conmen-1">UI/UX</div>
+                    <div class="div-10 conmen-1">Digital Marketing</div>
+
+                </div>
+            </div> -->
+            <!-- <a href="#">Placement Records</a>
+            <a href="#contact">Contac Us</a>
+            <a href="./sing-up-index.html" class="color-or  ">Sing up</a>
+            <a href="./login-index.html" class="color-or ">Login in</a>
+            <a href="#"><i class="fa-solid fa-earth-americas"></i></a> -->
+        <!-- </div> -->
+        <!-- main-contant-1 -->
+        <div class="main-contant-1"> 
+           
+            <!-- headr-cont-1 -->
+            <div class="header-cont-1">
+                <h4 class="head-h3">5000+ TRUSTED STUDENTS</h4>
+                <h2 class="head-h spacing-1">The Best Software Training </h2>
+                <h2 class="head-h1 spacing-1">Institute in Chennai</h2>
+                <p class="head-p3">Login360 is the best software training institute in Chennai</p>
+                <p class="head-p3">with 100% placement support for all our students. Here we</p>
+                <p class="head-p3">teach trending technologies with real-time projects.</p>
+                <div class="head-btn">
+                    <button>Enroll Now
+                        <i class="fa-solid fa-arrow-right"
+                            style="padding-top: 5px; font-size: 12px; color: rgb(255, 254, 254);"></i></button>
+                </div>
+            </div>
+            <!-- image-cont-1 -->
+
+            <div class="image-cont-1">
+                <img src="./it-4.jpg" alt="image">
+            </div>
+        </div>
+        <!-- four-flex-box -->
+        <div class="four-flex-box">
+            <div class="box-1 border-1">
+                <div><i class="fa-solid fa-graduation-cap size"></i></div>
+                <h1 class="num" data-val="6543">5,000</h1>
+                <h3>Satisfied Learners</h3>
+            </div>
+            <div class="box-1 border-1">
+                <div><i class="fa-solid fa-clock size"></i></div>
+                <h1 class="num" data-val="160"> 160</h1>
+                <h3>Realtime Projects</h3>
+
+            </div>
+            <div class="box-1 border-1">
+                <div><i class="fa-solid fa-laptop size"></i></div>
+                <h1 class="num" data-val="55">55</h1>
+                <h3>Courses</h3>
+            </div>
+            <div class="box-1 border-1">
+                <div><i class="fa-solid fa-certificate size"></i></div>
+                <h1 class="num" data-val="300">000</h1>
+                <h3>Certified Trainers</h3>
+            </div>
+        </div>
+        <!-- about us div -->
+        <div class="about-main-div">
+            <div class="about-image">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.9667157842823!2d80.21652267396873!3d12.973980687341587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d3154bf18fb%3A0x706bf6b0e2157ca9!2sLogin360!5e0!3m2!1sen!2sin!4v1723394370530!5m2!1sen!2sin"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="about-contant">
+                <h3 class="color-h1">ABOUT US</h3>
+                <h2>Best Software Training</h2>
+                <h2 class="color-h1">Institute in Chennai</h2>
+                <p class="about-para">Welcome to Login360, the premier destination for the Best
+                    Software Training Institute in Chennai. Our expert instructors provide hands-on
+                    training in the latest technologies, ensuring you gain the skills needed to excel in
+                    the tech industry. From coding to data science, our comprehensive programs are designed
+                    to cater to all levels of expertise. Come along and start along the path to a lucrative software
+                    development career. Achieve your professional goals with Login360, where learning meets excellence.
+                </p>
+                <div class="about-btn">
+                    <button> View More</button>
+                </div>
+            </div>
+        </div>
+        <!-- new contant for this -->
+      
+        <!-- Our Development Courses -->
+        <div class="Our-Development-Courses">
+            <h1 class="our-h1">Our Development Courses</h1>
+            <!-- developement-courses-4 -->
+            <div class="developement-courses-4">
+                <div class="courses-4">
+                    <div><i class="fa-brands fa-java size"></i></div>
+                    <h2>Java</h2>
+                    <p>Unlock the power of object-oriented
+                        programming comprehensive Java
+                        Training in Chennai.
+                    </p>
+                    <div class="java-btn course-btn">
+                        <button>Course &#8377;4,999</button>
+                    </div>
+                </div>
+                <div class="courses-4 ">
+                    <div><i class="fa-brands fa-python size"></i></div>
+                    <h2>Python</h2>
+                    <p>Learn the basics to advanced concepts,
+                        equipping you with the skills needed for development.
+                    </p>
+                    <div class="python-btn  course-btn">
+                        <button>Course &#8377;4,999</button>
+                    </div>
+                </div>
+                <div class="courses-4">
+                    <div><i class="fa-solid fa-file-code size"></i></div>
+                    <h2>Fullstack</h2>
+                    <p>Master front-end and back-end skills with our Full
+                        Stack Developer Course in Chennai.
+                    </p>
+                    <div class="fullstack-btn  course-btn">
+                        <button>Course &#8377;19,999</button>
+                    </div>
+                </div>
+                <div class="courses-4 ">
+                    <div><i class="fa-brands fa-html5 size"></i></div>
+                    <h2>Web Design</h2>
+                    <p>Explore our Web Designing Course in Chennai,
+                        covering HTML, CSS, and JavaScript for web development.
+                    </p>
+                    <div class="web-design-btn course-btn">
+                        <button>Course &#8377;4,999</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Our Special Courses -->
+        <div class="Our-Special-Courses">
+            <h1 class="our-h1"> Our Special Courses</h1>
+            <div class="developement-courses-4">
+                <div class="courses-4">
+                    <div><i class="fa-solid fa-image size"></i></div>
+                    <h2>Digital Marketing</h2>
+                    <p>
+                        Develop a trending skill and become part of the booming
+                        digital marketing industry with our Digital Marketing course in Chennai.
+                    </p>
+                    <div class="java-btn course-btn">
+                        <button>Course &#8377;4,999</button>
+                    </div>
+                </div>
+                <div class="courses-4 ">
+                    <div><i class="fa-brands fa-aws size"></i></div>
+                    <h2>AWS</h2>
+                    <p>
+                        AWS Courses in Chennai offer comprehensive training
+                        on cloud computing, preparing you for top AWS certifications and careers.
+                    </p>
+                    <div class="python-btn  course-btn">
+                        <button>Course &#8377;9,999</button>
+                    </div>
+                </div>
+                <div class="courses-4">
+                    <i class="fa-solid fa-file-code size"></i>
+                    <h2>UI/UX</h2>
+                    <p>
+                        UI/UX Courses in Chennai focus on design principles,
+                        prototyping, and usability testing, enhancing your frontend development skills.
+                    </p>
+                    <div class="fullstack-btn  course-btn">
+                        <button>Course &#8377;19,999</button>
+                    </div>
+                </div>
+                <div class="courses-4 ">
+                    <i class="fa-solid fa-chart-simple size"></i>
+                    <h2>Data Science</h2>
+                    <p>
+                        Join our Data Science Course
+                        in Chennai for in-depth training on data analytics and machine learning skills and data science.
+                    </p>
+                    <div class="web-design-btn course-btn">
+                        <button>Course &#8377;17,999</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Best Software Training Institute in Chennai -->
+        <div class="best-software-trainig">
+            <h2 class="soft-h2">Why Choose <span style="color: orangered;">Best Software
+                    Training Institute in Chennai ?</span>
+            </h2>
+            <!-- best-software -->
+            <div class="best-software">
+                <div class="best-software-box-4">
+                    <div class="software-4">
+                        <h2>Expert <span style="color: orangered;">Trainers</span></h2>
+                        <p>Our expert instructors bring years of practical experience and real-world insights
+                            to the classroom, ensuring students gain both theoretical and practical knowledge.
+                        </p>
+                        <div class="sotf-btn">
+                            <button>View More</button>
+                        </div>
+                    </div>
+                    <div class="software-4">
+                        <h2>Affordable <span style="color:orangered;">Fees</span></h2>
+                        <p>Everyone deserves access to quality education. That's why we offer individual
+                            courses starting at just &#8377;4,999/- offer of first five student to ensure affordability
+                            for all
+                        </p>
+                        <div class="sotf-btn">
+                            <button>View More</button>
+                        </div>
+                    </div>
+                    <div class="software-4">
+                        <h2>Modern <span style="color: orangered;">Facilities</span></h2>
+                        <p>Our institute features modern classrooms, high-speed internet, and the
+                            latest software, providing students with top-notch resources for learning experience.
+                        </p>
+                        <div class="sotf-btn">
+                            <button>View More</button>
+                        </div>
+                    </div>
+                    <div class="software-4">
+                        <h2>Job Placement <span style="color: orangered;">Assistance</span></h2>
+                        <p>We offer comprehensive job placement support. We conduct Aptitude class, Resume building
+                            sessions, Group Discussion, Mock interview to kick start your career.
+                        </p>
+                        <div class="sotf-btn">
+                            <button>View More</button>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- best-software-image -->
+                <div class="best-software-image">
+                    <img src="./it-data-1.jpg" alt="image">
+                    <img src="./it-3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- Frequently Asked Questions -->
+        <div class="Frequently-Asked-Questions">
+            <h2 class="ques-h2">Frequently Asked <span style="color: orangered;">Questions</span></h2>
+            <div class="Asked-Questions">
+                <div class="question-1" id="ques-ans-1">
+                    <h3 class="ques-1" id="q-1">How do I enroll in the Best Software Training
+                        Institute in Chennai?
+                    </h3>
+                    <p class="ans-1" id="a-1">You can enroll at Login 360 by visiting our website, filling out the
+                        registration form, and selecting the course you are
+                        interested in. You will be assisted by our admissions team during the procedure.
+                    </p>
+                </div>
+                <div class="question-1" id="ques-ans-1">
+                    <h3 class="ques-1" id="q-1">
+                        Does the software testing training include hands-on practice chennai?
+                    </h3>
+                    <p class="ans-1" id="a-1">
+                        Yes, our training includes extensive hands-on practice with popular testing tools
+                        and real-world scenarios to ensure you gain practical experience.
+                    </p>
+                </div>
+                <div class="question-1" id="ques-ans-1">
+                    <h3 class="ques-1" id="q-1">
+                        What will I learn in the Java training course at Login 360 channain?
+                    </h3>
+                    <p class="ans-1" id="a-1">
+                        The Java training course covers fundamental concepts, object-oriented programming, advanced Java
+                        features,
+                        web development using Java, and real-world project implementation.
+                    </p>
+                </div>
+                <div class="question-1" id="ques-ans-1">
+                    <h3 class="ques-1" id="q-1">
+                        What are the benefits of taking the full stack developer
+                        course at Login 360?
+                    </h3>
+                    <p class="ans-1" id="a-1">
+                        Our course covers both front-end and back-end technologies, including HTML, CSS, JavaScript,
+                        Node.js, React, databases, and real-world
+                        projects, ensuring you become a proficient full stack developer.
+                    </p>
+                </div>
+                <div class="question-1" id="ques-ans-1">
+                    <h3 class="ques-1" id="q-1">
+                        What courses does Login 360, a leading Best Software Training
+                        Institute in Chennai, offer?
+                    </h3>
+                    <p class="ans-1" id="a-1">
+                        Login 360 offers a wide range of courses, including Java, Python,
+                        software testing, web designing, digital marketing, and fullstack development.
+                    </p>
+                </div>
+                <div class="question-1" id="ques-ans-1">
+                    <h3 class="ques-1" id="q-1">
+                        Does the full stack developer course include job placement support?
+                    </h3>
+                    <p class="ans-1" id="a-1">
+                        Yes, we offer comprehensive job placement support, including resume workshops
+                        and interview coaching, to help you secure a position in the tech industry.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Stay Connected -->
+        <div class="Stay-Connected" id="contact">
+            <div class="contecte-para">
+                <h3 class="cont-h3">We would love to hear from you</h3>
+                <h2 class="cont-h2">Stay Connected </h2>
+                <button class="mini-para"></button>
+                <p>If you have any queries or feedback, kindly fill this form and our team will reach you as soon as
+                    possible.</p>
+                <p>Feel free to contact us!</p>
+            </div>
+            <div class="contect-main">
+                <div class="contect-box-1">
+                    <h2>Chennai Address</h2>
+                    <div class="address-div">
+                        <i class="fa-solid fa-location-dot " style="font-size: 20px;"></i>
+                        <span style="padding-left:10px;">No-06, Ground Floor,</span>
+                        <p>5th Main Road,</p>
+                        <p>Vijaya Nagar</p>
+                        <p>Velachery, Chennai - 600 042.</p>
+                        <i class="fa-solid fa-phone" style="font-size: 20px;"></i>
+                        <span>+91-93639 76837</span>
+                    </div>
+                    <h2>Coimbatore Address</h2>
+                    <div class="address-div">
+                        <i class="fa-solid fa-location-dot " style="font-size: 20px;"></i>
+                        <span style="padding-left:10px;">346, First Floor,</span>
+                        <p>Diwan Bahadur Road,</p>
+                        <p>R.S. Puram, Coimbatore,</p>
+                        <p>Tamil Nadu - 641002</p>
+                        <i class="fa-solid fa-phone" style="font-size: 20px;"></i>
+                        <span>+91-72004 56323</span>
+                    </div>
+                    <h2>HR & Placement</h2>
+                    <div class="address-div">
+                        <i class="fa-solid fa-envelope" style="font-size: 20px;padding-right: 20px;"></i>
+                        <span>hr@login360.in</span>
+                    </div>
+                </div>
+                <div class="contect-box-2" id="alert-box">
+
+                    <form action="">
+                        <h2 style="text-align: center;">Booking the Course</h2>
+                        <input type="text" placeholder="First-Name" class="int">
+                        <p id="first-name"></p>
+                        <input type="email" placeholder="Email" class="int">
+                        <p id="email-name"></p>
+                        <input type="text" placeholder="Phone number" class="int">
+                        <p id="Phone-name"></p>
+                        <select name="" id="" class="int">
+                            <option value="">Select Branch </option>
+                            <option value="">Chennain</option>
+                            <option value="">Coimbatore</option>
+                        </select>
+                        <p id="select-branch"></p>
+                        <select name="" id="" class="int">
+                            <option value="">Select Course</option>
+                            <option value="">Java</option>
+                            <option value="">Python</option>
+                            <option value="">Data Analytics</option>
+                            <option value="">web design</option>
+                            <option value="">Software Teasting</option>
+                            <option value="">Amazon web Services</option>
+                            <option value="">DevOps</option>
+                            <option value="">Fullstack Developer</option>
+                            <option value="">UI/UX</option>
+                            <option value="">Digital Marketing</option>
+                            <option value="">Data science</option>
+                            <option value="">selenium</option>
+                        </select>
+                        <p id="select-coures"></p>
+                        <div class="sub-btn ">
+                            <button class="int" style="font-size: 18px;
+                                background-color: orangered;color: white;"  id="submit-btn">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <h4>Powerde by Chan-365<sup>o</sup> IT course</h4>
+        </footer>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>

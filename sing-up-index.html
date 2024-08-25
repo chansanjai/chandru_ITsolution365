@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        .main-sign-up{
+            display: flex;
+            width: 100%;
+            justify-content:center;
+            padding-top: 50px;
+            text-align: center;
+            flex-wrap: wrap;
+        }
+        .sign-up-box-1{
+            width: 30%;
+            margin-right: 20px;
+        }
+        .sign-up-box-1 img{
+            width: 100%;
+        }
+        .sign-up-box-2 h1{
+             padding-bottom: 20px;
+        }
+        .check-box{
+            margin-right: 10px;
+        }
+        .input-1 input,.check-box{
+            border: 1px solid black;
+        }
+        .input-1 input,button{
+            padding: 25px 10px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            width: 100%;
+            outline: none;
+        }
+        div h3{
+            padding-top: 20px;
+        }
+        div button{
+            border: none;
+            color: white;
+            font-size: 18px;
+            background-color: rgb(235, 105, 19);
+        }
+     
+        @media screen and (max-width:800px) {
+            .main-sign-up{
+                padding-top: 20px;
+                padding: 30px 10px 30px 10px;
+            }
+            .sign-up-box-1 img{
+            width: 70%;
+        }
+            .sign-up-box-1{
+                width: 100%;
+            }
+            .sign-up-box-2{
+                width: 100%;
+            }
+            .sign-up-box-2 input,button{
+                padding: 15px 5px;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="main-sign-up">
+        <div class="sign-up-box-1">
+            <img src="./sing-up-image.webp" alt="image">
+        </div>
+        <div class="sign-up-box-2">
+            <h1>Sign up and start learning</h1>
+            <form action="">
+                <div class="input-1">
+                    <div><input type="text" placeholder="Full name"></div>
+                <div><input type="email" placeholder="Email"></div>
+                <div><input type="text" placeholder="Password"></div>
+                <div class="span-1"><span></span><span></span><span></span></div>
+                </div>
+                <input type="checkbox" class="check-box"><span>Send me special offers,personalized recommendations, and learning tips</span>
+                <div><button class="sing-btn"> Sign up</button></div>
+                <div>
+                    by signing up,you gree to our <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>
+                </div>
+                 <div>
+                    <h3>Already have an account? <a href="./login-index.html" target="_parent">Log in</a></h3>
+                 </div>
+
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

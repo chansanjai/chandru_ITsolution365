@@ -1,0 +1,248 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* nav-bar */
+.nav-bar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px 20px;
+    /* background-color: rgb(236, 233, 233); */
+    box-shadow: 2px 2px 2px 2px grey;
+    
+}
+/* hide-bar------------ */ 
+ .hide-nav-bar{
+    /* background-color: green;  */
+    padding: 10px 10px;
+    display: none;
+}
+
+.drop-down{
+    display: none;    
+    position:fixed;
+    /* position: sticky; */
+    left: 0px;
+    top: 63px;
+    background-color: rgb(253, 253, 253);
+    width: 50%;
+    transition: .5s ease;
+    padding:10px 10px 50 10px;
+  
+}
+/* link-tag */
+.link-tag{
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 2px;
+}
+.link-tag:hover{
+    background-color: rgb(144, 144, 201);
+}
+.drop-down ul{
+    /* -ms-transform: translate(-20%,-20%); */
+    height: 100vh;
+    overflow-y: scroll;
+    padding-bottom: 15px;
+   
+   
+}
+.drop-down ul li{
+    padding: 10px 10px;
+    list-style: none;
+    
+}
+.drop-down ul li i{
+    font-size: 10px;
+    padding-left: 10px;
+    float: right;
+}
+.drop-down ul li a{
+    text-decoration: none;
+    color: rgb(15, 15, 15);
+}
+.border-line{
+    border-bottom: 1px solid black;
+}
+.clear-1 p{
+    font-size: 20px;
+    font-weight: bold;
+    float: right;
+    background-color: rgb(230, 231, 230);
+    padding: 8px 10px;
+    border-radius: 50%;
+   
+}
+
+
+.nav-conatant{
+    padding-top: 10px;
+}
+
+.headin-tag{
+    font-size: 28px;
+    padding-top: 2px;
+    font-weight: bold;
+}
+.catagories{
+    font-size: 18px;
+   
+}
+/*   ---------------------- */
+.clearhide{
+    display: none;
+}
+.input-div{
+    background-color: rgb(221, 221, 221);
+     padding: 3px;
+     width: 30%;
+     /* border: 2px solid black; */
+     border-radius: 10px;
+}
+.input-div i{
+    padding-left: 10px;
+}
+.input-div input{
+    background-color: transparent;
+    border: none;
+    margin-left: 10px;
+    padding: 10px 0px;
+    outline: none;
+    width: 80%;
+}
+.clear-hide{
+    display: none;
+}
+.catagories i{
+        font-size: 13px;
+        padding-left: 5px;
+}
+.all-sing-login a{
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    padding: 8px;
+}
+.nav-conatant:hover{
+    color: orangered;
+}
+
+.sing-up a{
+    background-color: black;
+    color: white;
+
+} 
+/*all-drop course---------------------------- */
+.all-drop{
+    position:fixed;
+    display:none;
+    margin-top: 10px;
+     padding: 10.5px 0px;
+    /* background-color: green; */
+} 
+.all-drop ul li i{
+    float: right;
+    margin-top: 5px;
+    margin-left: 20px;
+    font-size: 12px;
+    color: rgb(238, 79, 16);
+}
+.all-drop ul li:hover i{
+    color: blue;
+}
+.all-drop ul{
+    padding: 0px 20px;
+    background-color: rgb(252, 252, 252);
+    /* box-shadow: 3px 3px rgb(24, 30, 117); */
+}
+.all-drop ul li{
+    list-style: none;
+    padding: 10px;
+}
+.all-drop ul li a{
+    text-decoration: none;
+    color: rgb(238, 79, 16);
+}
+
+.all-drop ul li a:hover{
+    color: blue;
+}
+.catagories:hover .all-drop{
+    display: block; }
+
+/* udemy-busi----------------- */
+.udemy-busi{
+    position: fixed;
+    display: none;
+    text-align: center;
+    width: 20%;
+    padding: 40px 0px 0px 0px;
+    /* background-color: green; */
+}
+.udemy-busi div{
+    padding: 10px 10px;
+    background-color: white;
+    box-shadow: 2px 2px grey;
+}
+.udemy-busi button{
+   font-size: 18px;
+   border: none;
+   width: 100%;
+   padding: 15px;
+   background-color: grey;
+   margin: 20px 0px 0px 0px ;
+}
+.udemy-busi button:hover{
+    background-color: blue;
+}
+.Udemy-Business:hover .udemy-busi{
+    display:block;
+}
+/* conatainer-bar */
+
+@media screen and (max-width:1000px){
+    .drop-down{
+        width: 50%;
+    }
+    .nav-conatant{
+        display: none;
+    }
+    .headin-tag{
+       padding-left: 50px;
+    }
+    .hide-nav-bar{
+        display: block;
+        padding-top: 10px;
+        font-size: 18px;
+    }
+    .cont-div-1{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 0px 20px 20px 20px;
+        width: 100%;
+    }
+    .cont-div-2{
+        width: 100%;
+        margin: 0px 0px 0px 0px;
+    }
+    .first-video{
+        width: 50%;
+    }
+}
+@media screen and (max-width:500px){
+    .drop-down{
+        width: 70%;
+    }
+    .first-video{
+        width: 100%;
+    }
+    .cont-div-1{
+        padding-top: 10px;
+    }
+}
+
+
+
+

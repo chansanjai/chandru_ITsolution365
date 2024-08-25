@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .main-login-box{
+            display: flex;
+            width: 100%;
+            margin-top: 100px;
+            flex-wrap: wrap;
+            justify-content:center;
+        }
+        /* login-box-1 */
+       .login-box-1{
+        width: 30%;
+        margin-right: 20px;
+       }
+       .login-box-1 img{
+        width: 100%;
+        border-radius: 20px;
+       }
+       /* login-box-2 */
+       .login-box-2{
+        text-align: center;
+        width: 30%;
+       }
+       .login-box-2 input,button{
+        margin: 10px 10px;
+        padding: 15px 10px;
+        width: 100%;
+        font-size: 18px;
+        outline: none;
+       
+       
+       }
+       .login-box-2 button{
+        color: white;
+        border: none;
+        background-color: rgb(221, 97, 15);
+       }
+       .login-box-2 h2{
+        padding-bottom: 10px;
+       }
+       .login-box-2 i{
+        padding-right: 10px;
+       }
+       /* .login-box-2 button{
+        margin: 30px 10px;
+        width: 100%;
+       } */
+      form div:nth-child(3){
+          font-size: 20px;
+          padding-bottom: 10px;
+      }
+      .app-link{
+        text-align: center;
+        margin-bottom: 20px;
+      }
+       
+     
+      .app-link i{
+        font-size: 28px;
+        margin-right: 20px;
+        padding: 10px;
+        background-color: rgb(232, 241, 217);
+        border-radius: 50%;
+        margin-bottom: 10px;
+      }
+      .sign-up-link{
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgb(201, 196, 196);
+        margin-bottom: 20px;
+      }
+      .sign-up-link p{
+        font-size: 18px;
+      }
+      
+      .last-link a{
+        font-size: 18px;
+        color: rgb(30, 37, 138);
+      }
+       @media screen and (max-width:900px) {
+        .main-login-box{
+          margin-top: 10px;
+          margin-bottom: 30px;
+        }
+        .login-box-1 img{
+          text-align: center;
+          height: 200px;
+          width: 50%;
+        }
+        .login-box-1,.login-box-2{
+          text-align: center;
+            margin: 10px;
+            width: 100%;
+            padding: 20px;
+        }
+       }
+    </style>
+</head>
+<body>
+    
+     <div class="main-login-box">
+        <div class="login-box-1">
+            <img src="./sing-up-image.webp" alt="">
+        </div>
+        <div class="login-box-2">
+            <h2>Log in to continue your <br> learning journey</h2>
+            <form action="">
+                <div><input type="email" placeholder="Email"></div>
+                <div><button class="login-btn"><i class="fa-solid fa-envelope"></i>Log in width email</button></div>
+                <div>Other log in option</div>
+            </form>
+            <div class="app-link">
+                <a href="#"><i class="fa-brands fa-google" style="color: green;"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook" style="color: blue;"></i></a>
+                <a href="#"><i class="fa-brands fa-apple" style="color: black;"></i></a>
+            </div>
+            <div class="sign-up-link">
+                <p>Don't have an account? <a href="./sing-up-index.html" target="_parent">Sign up</a></p>
+            </div>
+            <div class="last-link"> 
+                <a href="#">Log in with your organization</a>
+            </div>
+        </div>
+     </div>
+</body>
+</html>

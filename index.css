@@ -1,0 +1,747 @@
+*{
+    padding: 0px;
+    margin: 0px;
+   box-sizing: border-box;
+
+}
+body{
+    background-color: rgb(240, 240, 240);
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+}
+/* contect-popup */
+.contect-popup{
+    display:none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    padding: 20px 10px;
+      background-color: rgb(211, 70, 70);
+    /* opacity: 0.5; */
+    background-color: transparent;
+    /* background-blend-mode: lighten; */
+}
+#clear-btn{
+    /* position: fixed; ------------------------------------------------------------------------*/
+    padding: 8px 10px;
+    top: 110px;
+    left: 500px;
+    font-size: 25px;
+    /* float: right; */
+}
+#booking{
+    /* backdrop-filter: opacity(50%); */
+    width: 30%;
+    position: fixed;
+    padding: 20px 30px;
+    right: 450px;
+    top: 100px;
+    color: white;
+    background-color: rgb(143, 138, 138);
+}
+
+.popup-box{
+    width: 30%;
+}
+
+/* whatapps */
+.apps-1{
+    position: fixed;
+    right: 10px;
+    bottom:20px;
+}
+.apps-1 span{
+background-color: rgb(223, 217, 217) ;
+font-size:20px;
+padding: 10px;
+border-radius: 30px;
+}
+/* content */
+.content{
+    position:sticky;
+    top: 0; 
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color:white;
+    border-bottom: 1px solid grey;
+}
+.cont-1{
+    /* position: sticky;
+    top: 0; */
+    padding: 10px;
+    display: flex;
+    padding-top: 10px;
+    width: 40%;
+    /* background-color: rgb(243, 245, 243); */
+    justify-content: space-between;
+}
+.hide-h3{
+    display: none;
+}
+
+.cont-2{
+    width: 60%;
+    background-color: rgb(228, 228, 228);
+     font-weight: bold;
+    /* box-shadow: 2px 2px 2px 2px grey; */
+    padding: 10px 10px;
+
+}
+.spa-1{
+    padding-right: 20px;
+    transition: transform .2s;
+}
+.spa-1:hover{
+    transform: scale(1.5);
+}
+/* news-heading------------------------------- */
+/* .spa-1{
+    font-size:18px;
+    padding: 10px 20px;
+} */
+
+/* drop-down */
+/* .drop-down{
+    display: none;
+    position:sticky;
+    top: 49px;
+    margin: 0px 20px;
+    margin-top: 20px;
+
+} */
+/* .drop-down ul li{
+    list-style: none;
+    background-color: orangered;
+    margin-top: 10px;
+    padding: 10px 30px;
+} */
+/* .drop-down a{
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+} */
+/* nav-bar */
+
+/* nav-bar ////////////////////-------- */
+.hide-link{
+    display: none;
+}
+.course-link-1:hover .hide-link{
+    position: fixed;
+    display:block;
+}
+
+/* hide java */
+.second-div{
+    display: none;
+}
+.div-1:hover .second-div{
+    display: block;
+}
+.conmen-1{
+    color: black;
+    font-size: 20px;
+     /* margin: 15px; */
+     padding: 10px  20px;
+     border-bottom: 2px solid rgb(134, 132, 132);
+}
+.hide-link{
+    margin: 0px 10px;
+    width: 20%;
+    font-size: 20px;
+    /* padding: 20px 10px; */
+    background-color: white;
+   
+}
+.sec-div-1{
+    color: orangered;
+}
+
+
+
+
+
+
+.nav-bar{
+    /* background-color: greenyellow; */
+    padding: 20px 30px;
+    /* text-align: center; */
+    justify-content: center;
+    display: flex;
+}
+.nav-bar a{
+    /* background-color: green; */
+    /* border-radius: 30px; */
+    /* font-size: 18px;
+    padding: 8px 5px;
+    margin-right: 40px;
+    text-decoration: none; */
+    /* background-color: green; */
+}
+.float-1{
+    float: right;
+}
+.first-a{
+    border-bottom: 3px solid orangered;
+    color: rgb(247, 106, 54);
+}
+.nav-bar a:hover{
+    /* background-color: orangered; */
+    /* border-bottom: 3px solid orangered;
+    color: rgb(247, 106, 54); */
+}
+/* color-or--------------------------------------------------------- */
+.color-or{
+    /* background-color:  rgb(68, 65, 63); */
+    /* border: 2px solid black; */
+    /* border: 2px solid black; */
+    /* color: rgb(22, 22, 22); */
+    /* box-shadow: 2px 2px 2px 2px blue; */
+    /* border-radius: 30px; */
+}
+.color-or:hover{
+    background-color:rgb(5, 5, 92);
+    /* border: 3px solid orangered; */
+}
+/* course-drop-down */
+/* course-link-1 */
+.course-link-1{
+    padding: 10px;
+    /* margin: 0px 20px; */
+}
+
+
+/* main-contant-1 */
+.main-contant-1{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 150px;
+    /* width: 100%; */
+}
+/* header-cont-1 */
+.header-cont-1{
+    width: 50%;
+}
+.head-h3{
+    padding: 30px 0px;
+}
+.head-h1{
+    color: orangered;
+}
+.head-p3{
+    margin-top:10px;
+    font-size: 18px;
+}
+.head-btn{
+    margin-top: 20px;
+}
+.head-btn button{
+    font-size: 12px;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 30px;
+    background-color: rgb(236, 68, 26);
+    color: white;
+}
+.head-btn button:hover{
+    background-color: black;
+    /* border: 4px solid orangered; */
+}
+/* image-cont-1 */
+.image-cont-1{
+    padding: 20px;
+    width:50%;
+}
+.image-cont-1 img{
+    width: 100%;
+}
+/* four-flex-box */
+/* fa solid------------------------------------------------------------------------ */
+   
+.size{
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+.four-flex-box{
+    margin: 10px 20px;
+    padding: 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 0px;
+    /* background-color:orangered; */
+}
+.box-1{
+    color: rgb(10, 10, 10);
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px 50px;
+    margin: 10px;
+    /* box-shadow: 2px 2px 2px 2px gray; */
+
+   
+}
+.border-1{
+    border-bottom: 5px solid orangered;
+    /* border-right: 2px solid white; */
+    /* border-right: 2px solid white; */
+}
+/* about-main-div */
+.about-main-div{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    padding:20px 150px;
+}
+.about-image{
+    width: 50%;
+   
+}
+.about-contant{
+    padding-left: 10px;
+    width: 50%;
+}
+.color-h1{
+    color: orangered;
+}
+.about-para{
+    font-size: 18px;
+    text-align: justify;
+    padding-top: 10px;
+}
+.about-btn{
+    margin-top: 20px;
+}
+.about-btn button{
+    border: none;
+    padding: 15px 20px;
+    border-radius: 30px;
+    background-color: orangered;
+    color:white;
+}
+.about-btn button:hover{
+    /* border: 4px solid orangered; */
+    background-color: black;
+}
+/* Our-Development-Courses */
+.fa-brands{
+    font-size: 36px;
+}
+.Our-Development-Courses{
+    margin-top: 50px;
+}
+.our-h1{
+    text-align: center;
+}
+.developement-courses-4{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: center;
+}
+.courses-4{
+    width: 20%;
+    margin: 20px;
+    padding: 10px 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px rgb(245, 87, 14);
+    /* transition: transfom .2s;-------------------------------------------------------- */
+    
+}
+
+.courses-4:hover{
+    /* transform: scale(1.1); */
+    box-shadow: 3px 3px 3px 3px blue;
+}
+.courses-4 h2{
+    padding: 20px 10px;
+}
+.course-btn{
+margin: 30px 10px 10px 10px;
+}
+.course-btn button{
+     background-color: orangered;
+     border: none;
+     color: white;
+     border-radius: 20px;
+     /* font-size: 15px; */
+     padding: 10px 60px;
+}
+.course-btn button:hover{
+    background-color: black;
+}
+
+/* Our-Special-Courses */
+.Our-Special-Courses{
+    margin-top: 100px;
+}
+/*  Best Software Training Institute in Chennai */
+.best-software-trainig{
+    margin-top: 100px;
+}
+.soft-h2{
+    text-align: center;
+}
+/*  best-software*/
+.best-software{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 20px;
+}
+/* best-software-box-4 */
+.best-software-box-4{
+    margin-top: 60px;
+    display:flex ;
+    flex-wrap: wrap;
+    width: 60%;
+}
+/* software-4 */
+.software-4{
+    padding: 20px 20px;
+    margin: 10px;
+    width: 45%;
+    border-radius: 30px;
+    /* border: 3px solid orangered; */
+    box-shadow: 2px 2px 2px 2px orangered;
+}
+.software-4:hover{
+    box-shadow: 2px 2px 2px 2px black;
+}
+.software-4 h2{
+    padding: 20px 10px;
+}
+.software-4 p{
+    padding: 20px 10px;
+    font-size: 18px;
+}
+.sotf-btn{
+    padding: 20px 10px;
+}
+.sotf-btn button{
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    background-color: orangered;
+    border-radius: 20px;
+    color: white;
+}
+.sotf-btn button:hover{
+    background-color: black;
+}
+
+/* best-software-image */
+.best-software-image{
+  margin-top: 70px;
+   width: 40%;
+}
+.best-software-image img{
+    width: 100%;
+}
+/* Frequently-Asked-Questions */
+.Frequently-Asked-Questions{
+    margin-top: 100px;
+}
+.Asked-Questions{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.ques-h2{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.question-1{
+    margin: 10px;
+    width:40%;
+}
+.ques-1{
+    background-color: rgb(235, 84, 29);
+    padding: 10px 10px;
+    color: white;
+}
+.ans-1{
+    display: none;
+    background-color: rgb(199, 194, 194);
+    padding: 20px 10px;
+}
+.question-1:hover .ans-1{
+    display: block;
+}
+/* Stay Connected ------------------------*/
+.Stay-Connected{
+    margin-top: 150px;
+}
+.contecte-para{
+    padding: 10px 10px;
+    text-align: center;
+}
+.contecte-para p{
+    font-size: 20px;
+    padding: 10px 0px;
+}
+.contecte-para h2{
+    padding: 10px 0px;
+}
+.cont-h3{
+    color: orangered;
+}
+.cont-h2{
+    font-size: 40px;
+}
+.mini-para{
+    width: 10%;
+    padding: 2px;
+    border: none;
+    background-color: orangered;
+}
+
+/* contect-main */
+.contect-main{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    padding: 20px 30px;
+}
+/* contect-box-1 */
+.contect-box-1{
+    width: 60%;
+   
+    /* text-align: center; */
+}
+/* contect-box-2------------------------------------ */
+.contect-box-2{
+    background-color: rgb(207, 203, 202);
+    width:40%;
+    padding: 20px 100px;
+    /* margin-left: 50px; */
+    border-radius: 10px;
+}
+.int{
+    margin-top: 10px;
+    padding: 15px  10px;
+    width: 100%;
+    outline: none;
+    border: none;
+}
+.address-div{
+    background-color:rgb(207, 203, 202);
+    color: rgb(0, 0, 0);
+    /* margin: 20px 20px; */
+    margin: 10px 20px 10px 0px;
+    padding: 20px 20px;
+}
+.address-div p{
+    padding: 0px 30px;
+}
+
+
+footer{
+    text-align: center;
+    margin-top: 100px;
+    padding: 20px 20px;
+    background-color: black;
+    color: white;
+    
+}
+
+
+.logo-img{
+    width: 30%;
+}
+.logo-img img{
+    /* width: 200px; */
+    width: 100%;
+    /* height: 50px; */
+}
+/* new form to */
+/* condent baner--------------------------------------------------------- */
+.conatainer-bar{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    /* height: 400px; */
+    /* background-color: rgb(236, 233, 233); */
+
+    /* background-color:rgb(247, 240, 240); */
+}
+.cont-div-1{
+    width: 40%;
+    padding: 20px;
+    background-color: #fcfcfc;
+    margin: 100px 10px 0px 20px;
+     height: 130px;
+    border-radius: 10px;
+    /* background-color: rgb(236, 233, 233); */
+
+}
+.cont-div-1 p{
+    /* padding: 10px 0px; */
+}
+@keyframes myani{
+    0%{
+        background-image: url("./udemy-img.png");
+        
+
+    }
+    25%{
+        background-image: url("./udemy-image-2.png");
+       
+      
+    }
+    75%{
+        background-image: url("./udemy-img.png");
+
+    }
+    100%{
+        background-image: url("./udemy-image-2.png");
+        
+        
+    }
+}
+.cont-div-2{
+    margin-left: 20px;
+    background-position: 100% 0%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 50vh;
+    animation: myani 10s infinite;
+
+}
+
+
+ 
+
+@media screen and (max-width:1000px){
+    .cont-div-2{
+        padding: 0px 100px;
+        width: 100%;
+    }
+    .conatainer-bar{
+        margin-top: 10px;
+        padding: 0px 20px;
+        width: 90%;
+        flex-direction:column-reverse;
+    }
+    
+    .apps-1{
+        right: 10px;
+        bottom: 40px;
+    }
+    .apps-1 span{
+        font-size: 16px;
+    }
+    /* content */
+    .hide-link{
+        width: 100%;
+    }
+    .hide-link a{
+        color:orangered;
+    }
+    .cont-1{
+        width: 100%;
+    }
+    .cont-2{
+        display: none;
+        /* display: flex; */
+        flex-wrap: wrap;
+        width:100%;
+    }
+   
+    /* .spa-1{
+        padding: 10px;
+    } */
+    /* nav-bar click me */
+    .hide-h3{
+        display: inline-block;
+    }
+    /* nav-bar */
+    .nav-bar{
+        display: none;
+    }
+     /* main-contant-1 */
+     .header-cont-1{
+        width: 100%;
+     }
+     .header-cont-1{
+        width: 100%;
+     }
+     .head-p3{
+        font-size: 16px;
+     }
+     .image-cont-1{
+        width: 100%;
+     }
+     /* four-flex-box  */
+     .box-1{
+        text-align: center;
+        width: 100%;
+        padding: 10px 20px;
+        border: none;
+        /* border-bottom: 2px solid white; */
+     }
+     .border-1{
+        border-bottom: 5px solid rgb(245, 43, 8);
+     }
+     iframe{
+        margin-bottom: 30px;
+        width: 100%;
+
+     }
+     .main-contant-1{
+        padding: 20px 20px;
+     }
+     .about-main-div{
+        padding: 20px 20px;
+     }
+     .about-image{
+        width: 100%;
+     }
+     .about-contant{
+        width: 100%;
+     }
+     /* Our-Development-Courses */
+     .courses-4{
+        width: 100%;
+     }
+     /* .question-1 */
+     .question-1{
+         width: 100%;
+     }
+     .best-software-box-4{
+        width: 100%;
+     }
+     .best-software-image{
+        width: 100%;
+     }
+     .software-4{
+        width: 100%;
+     }
+     .contect-box-1{
+        width: 100%;
+     }
+    .contect-box-2{
+        padding: 20px ;
+        margin-left: 0px;
+        width: 100%;
+    }
+    /* .cont-div-2 */
+    .cont-div-2{
+        height: 200px;
+    }
+    #booking{
+        background-color: rgb(240, 241, 240);
+        top: 0px;
+        left: 0px;
+        width: 90%;
+        margin: 10px 20px;
+        padding: 10px 10px 40px 10px;
+        color:orangered;
+        /* right: 0px; */
+    }
+#clear-btn{
+        top: 10px;
+        left: 30px;
+}
+}
