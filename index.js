@@ -69,4 +69,18 @@ function myFunction() {
   document.getElementById("alertbox").style.display="none"
 });
 };
+// content chenge heading
+
+document.getElementById('fbtn').addEventListener('click',()=>{
+  document.getElementById('demo').innerHTML="Front-end web development is the development of the graphical user interface of a website through the use of HTML, CSS, and JavaScript so users can view and interact with that website.";
+
+ });
+ document.getElementById('sbtn').addEventListener('click',()=>{
+  document.getElementById('demo').innerHTML="Backend Development refers to the server-side development of the web application. It is the part of the application where the server and database reside and the logics is build to perform operations. It includes the main features and functionalities of the application on the server. Programming languages for the backend are mainly Node. JS (for JavaScript), Django (for Python), Spring (Java), etc.";
+  
+ })
+ document.getElementById('tbtn').addEventListener('click',()=>{
+  document.getElementById('demo').innerHTML="Full Stack web developers have the ability to design complete web applications and websites. They work on the frontend, backend, database, and debugging of web applications or websites.";
+  
+ })
 
